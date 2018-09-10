@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 	<html>
 		<head>
+			{% include analytics_head.html %}
 			<title>{{ page.title }}</title>
 			{% seo %}
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
 		<body>
+			{% include analytics_body.html %}
 			<script>
 				function resizeHeaderOnScroll() {
 				  const distanceY = window.pageYOffset || document.documentElement.scrollTop,
@@ -55,6 +57,5 @@
 					<p>Copyright © 2017 Victor Blancada. All Rights Reserved.</p>
 				</footer>
 			</div>
-			{% include analytics.html %}
 		</body>
 	</html>
